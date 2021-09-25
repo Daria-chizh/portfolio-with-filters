@@ -1,0 +1,43 @@
+.main-content {
+  width: 80%;
+}
+
+.filterList {
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.borderLink {
+  height: 2em;
+  line-height: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.borderLink.active {
+  border-width: 3px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between ;
+  flex-direction: row;
+  flex-wrap: wrap;;
+  width: 60%;
+
+}
+
+.picture {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
