@@ -10,10 +10,10 @@ class Toolbar extends React.Component {
 
     return (
       <div className="main-content">
-        <div className="filterList">
+        <div className="filter-list">
           {
             filters.map((filterName, idx) => {
-              const className = selected === filterName ? 'borderLink active' : 'borderLink';
+              const className = selected === filterName ? 'border-link active' : 'border-link';
 
               return (
                 <div className={className} key={idx}>
