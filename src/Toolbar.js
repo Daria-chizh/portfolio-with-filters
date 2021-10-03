@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Toolbar extends React.Component {
   handleClick = (filterName) => {
@@ -27,4 +28,11 @@ class Toolbar extends React.Component {
     );
   }
 }
+
+Toolbar.propTypes = {
+  filters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  selected: PropTypes.string.isRequired,
+  onSelectFilter: PropTypes.func.isRequired,
+};
+
 export default Toolbar;

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Toolbar from './Toolbar';
 import ProjectList from './ProjectList';
 
@@ -26,4 +28,10 @@ class Portfolio extends React.Component {
     )
   }
 }
- export default Portfolio;
+
+Portfolio.propTypes = {
+  projects: PropTypes.arrayOf(PropTypes.shape({ img: PropTypes.string, category: PropTypes.string })).isRequired,
+  filters: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+export default Portfolio;

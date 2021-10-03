@@ -1,9 +1,9 @@
 import React from 'react';
 import Portfolio from './Portfolio';
 
-const  filters  = ["All", "Websites", "Flayers", "Business Cards"];
+const filters  = ["All", "Websites", "Flayers", "Business Cards"];
 
-const  projects  = [{
+const projects  = [{
   img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg",
   category: "Business Cards"
 }, {
